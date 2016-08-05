@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Express Yourself - Walter Perry's Biography</title>
+  <head>
+<style>
+body {
+}
+#intro {
+  padding-top: 10px;
+  /*float: right;*/
+}
+img{
+  width: 75px;
+  height: 75px;
+  float: left;
+  padding: 10px;
+}
+</style>
+</head>
+</head>
+<body>
+  <div style="width:500px;">
+  <img src="walter perry face.jpg" alt="Walter Perry" />
+  <p id="intro">
+    Hi! My name is Walter Perry. I live <br />
+    in Austin, TX. I am a Web <br />
+    Developer.
+  </p>
+  <br />
+  <br />
+  </div>
+  <div>
+    <p>
+      My skills are
+    </p>
+    <ul>
+      <% skills.forEach(function(skill){ %>
+        <li><%= skill %></li>
+      <% }); %>
+</ul>
+  </div>
+
+
+  <div>
+    <p>
+      My hobbies are
+    </p>
+    <ul>
+      <% skills.forEach(function(hobby){ %>
+        <li><%= hobby %></li>
+      <% }); %>
+</ul>
+  </div>
+
+</body>
+</html>
